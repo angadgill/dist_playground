@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.slider-container {
+    margin: 20px;
+}
+
+input[type="range"] {
+    width: 80%;
+}
+
+#chart-container {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+}
