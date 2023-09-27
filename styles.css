@@ -8,6 +8,21 @@ h1 {
     color: #333;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
 .slider-container {
     margin: 20px;
 }
