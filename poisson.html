@@ -8,15 +8,15 @@
 </head>
 <body>
     <h1>Poisson Distribution Plotter</h1>
-    
+
+    <div id="chart-container">
+        <canvas id="poisson-chart"></canvas>
+    </div>
+
     <div class="slider-container">
         <label for="lambda-slider">λ (Mean):</label>
         <input type="range" id="lambda-slider" min="0.1" max="10" step="0.1" value="3">
         <span id="lambda-value">3</span>
-    </div>
-
-    <div id="chart-container">
-        <canvas id="poisson-chart"></canvas>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
