@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomial Distribution Plotter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Binomial Distribution Plotter</h1>
+
+    <div id="chart-container">
+        <canvas id="binomial-chart"></canvas>
+    </div>
+    
+    <div class="slider-container">
+        <label for="n-slider">n (Number of Trials):</label>
+        <input type="range" id="n-slider" min="1" max="20" value="10">
+        <span id="n-value">10</span>
+    </div>
+
+    <div class="slider-container">
+        <label for="p-slider">p (Probability of Success):</label>
+        <input type="range" id="p-slider" min="0.1" max="0.9" step="0.1" value="0.5">
+        <span id="p-value">0.5</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="binomial-script.js"></script>
+</body>
+</html>
