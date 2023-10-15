@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi-Square Distribution Plotter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Chi-Square Distribution Plotter</h1>
+
+    <div id="chart-container">
+        <canvas id="chi-square-chart"></canvas>
+    </div>
+
+    <div class="slider-container">
+        <label for="df-slider">Degrees of Freedom (df):</label>
+        <input type="range" id="df-slider" min="1" max="50" value="5">
+        <span id="df-value">5</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chi_square-script.js"></script>
+</body>
+</html>
