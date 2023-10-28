@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomial Distribution and its Bootstrapped Mean Plotter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Binomial Distribution and its Bootstrapped Mean Plotter</h1>
+
+    <div id="binomial-chart-container" class="chart-container">
+        <canvas id="binomial-chart"></canvas>
+    </div>
+
+    <div class="slider-container">
+        <label for="n-slider">Number of Samples (n):</label>
+        <input type="range" id="n-slider" min="1" max="100" value="30">
+        <span id="n-value">30</span>
+    </div>
+
+    <div class="slider-container">
+        <label for="p-slider">Probability of Success (p):</label>
+        <input type="range" id="p-slider" min="0.01" max="0.99" step="0.01" value="0.5">
+        <span id="p-value">0.5</span>
+    </div>
+
+    <div id="bootstrap-chart-container" class="chart-container">
+        <canvas id="bootstrap-mean-chart"></canvas>
+    </div>
+
+    <div class="slider-container">
+        <label for="iterations-slider">Number of Bootstrap Iterations:</label>
+        <input type="range" id="iterations-slider" min="100" max="1000" step="100" value="500">
+        <span id="iterations-value">500</span>
+    </div>
+
+    <div class="slider-container">
+        <label for="bin-count-slider">Number of bins:</label>
+        <input type="range" id="bin-count-slider" min="5" max="20" step="1" value="10">
+        <span id="bin-count-value">10</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="binomial-bootstrap-mean-script.js"></script>
+</body>
+</html>

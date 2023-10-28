@@ -31,6 +31,12 @@ input[type="range"] {
     width: 80%;
 }
 
+.chart-container {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+}
+
 #chart-container {
     width: 80%;
     height: 300px;
